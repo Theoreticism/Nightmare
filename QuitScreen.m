@@ -28,7 +28,7 @@
         int screenWidth = [[CCDirector sharedDirector] winSize].width;
         int screenHeight = [[CCDirector sharedDirector] winSize].height;
         
-        CCLabelTTF *label = [CCLabelTTF labelWithString:@"Are you sure?" fontName:@"Xposed" fontSize:64];
+        CCLabelTTF *label = [CCLabelTTF labelWithString:@"Are you sure?" fontName:@"Xposed" fontSize:52];
         
         CGSize size = [[CCDirector sharedDirector] winSize];
         

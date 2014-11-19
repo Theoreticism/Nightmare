@@ -7,6 +7,11 @@
 //
 
 #import "AudioScreen.h"
+#import "Options.h"
+#import "SimpleAudioEngine.h"
+#import "SoundEffects.h"
+
+#define THEME_SONG @"4225775_The_River_War_Original_Mix.mp3"
 
 @implementation AudioScreen
 
@@ -55,11 +60,19 @@
 }
 
 -(void) onSoundsOn:(CCMenuItemFont *)button {
-    //Do nothing yet
+    //Toggle music on
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic: THEME_SONG loop:true];
+    [Options enableMusic:true];
+    //Toggle sounds on
+    [Options enableSounds:true];
 }
 
 -(void) onSoundsOff:(CCMenuItemFont *)button {
-    //Do nothing yet
+    //Toggle music off
+    [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+    [Options enableMusic:false];
+    //Toggle sounds off
+    [Options enableMusic: false];
 }
 
 @end
