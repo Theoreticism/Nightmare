@@ -88,7 +88,7 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
 //            CGPoint here = [Helper tileToWorldX:tilex andY:tiley];
             CGPoint here = [Helper tile:ccp(tilex,tiley) toWorld:world];
             
-            if(gid == RID_GRACE) {               
+            if(gid == RID_PLAYER) {
                 player = [[Player alloc] initAt:here of:self];
                 
                 [self addChild: player z: 90];
