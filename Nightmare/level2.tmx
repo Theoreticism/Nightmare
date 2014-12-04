@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="80" height="60" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="tiles_nightmare" tilewidth="16" tileheight="16">
+  <image source="tiles_nightmare.png" width="128" height="128"/>
+ </tileset>
+ <layer name="platforms" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztnMFygzAMRElvPfb/f7anTjMMcWLtar3CejO+gY0fElbAk8dxHI9uUGtitD+M9ofR/jDaHwbL3/eprUJ9HUx/O9L5i1HNn8Mz4pkrfy7XVgHEn1ssRDivN7OtSvy53ieFP5faJgN1/O3iLytW7haDK+qXV/4q5vmMv6v1J8JoPXs+pgKu9TPTH+u+X7GDv0xe+Vv9DKruLwIzP0Z9OK0zbH+70f4wGP4c8mgVqD83d+rrQfy5ufsDqetnmfXnsu6NcPfnTvvDiLw/j+bUzv4YuP7+RWh/GLv7m53/J9/JsnDxx5qvur5y8VeV9odxt/1rajr+MFT+7hqb7vGX8c2UOa67vzOq+P10nGr+VLQ/jEr+0JzMWJvY/rLqO9d1uUL8na/RyWEFf86s9sfOy9nnh+odVoa/q7xE695R/ytR7h+K1P+RcZSs2P/y7jhWPwqY+19m5jOKrcxx2bD8sc5h9qWAsf+F9b1f9W6FCeoPgb2uVvHHut8Z/tRxGPXHIKuuW+3v68057Hn+JPWrIPp/Rd3+2y+cPQnF
+  </data>
+ </layer>
+ <layer name="rewards" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt2LEJADAIBEAb9185ZfpgYpC7CcQXQSMAAIBT2V0AI5ijeWQKAAAANdzYPV72XcYAAAAAm18JcIv9AgAAAAD8agFSKQAp
+  </data>
+ </layer>
+ <layer name="insanity" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt2LEJAEAIA0Ar9x/5EXf4WNxNEJAUsQoAAAAAYHU6ABHuDjfoIgAAAAD85ScHAADAsA8BAAAY9mHGAxGzACU=
+  </data>
+ </layer>
+ <layer name="enemies" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt2kEKgCAQBVDBI3T/u0a7EIuplIR5b+fG2ej4kSkFAACAqG3AHvWHmsB6znf7aV/o7QErOc5mbdYAAAAAABHt/+KsGgBADm/e/a9ZRNYAmCPSX/VwACCzq/l0GQcAyOouB42aS5C1xtgBuzIBSQ==
+  </data>
+ </layer>
+ <layer name="stalks" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt07EVwyAUBEHHDt1/sU6dryTge6YBuMfyegEAAMC+3qsvcLjP6gscTn+N/prp/d29b3p/d+/TX6O/Rn/Nzv1dsf2f+7tiu/4a/TX6a/TX6K/Zed/dTuhvZ/pr9Nfor/nn7Vd46u9N/eNP9Te1c/01+jvD1P6eor9Gf43+Gv01+mv015zQnzduTnjjnemvmdLfqg6m9LeqA/2dee7V9Nfor9Ffo79Gf82UDlaZ0gH8+gIiXQR9
+  </data>
+ </layer>
+ <layer name="obstacles" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt2DENAAAIA8Hu+PeLBTYguVPwY9MEAAAAAGZqOwAAAADgAB8JAAD8Zc8DAAAAAADAHQ2fdwAi
+  </data>
+ </layer>
+</map>

@@ -52,6 +52,7 @@ int RID_LADDAS[] = { 10, 18 };
         caught = complete = FALSE;
         
         count = 0;
+        
 	}
     
     [self scheduleUpdate];
@@ -98,6 +99,10 @@ int RID_LADDAS[] = { 10, 18 };
                 [self addChild: goal z:90];
                 
                 [platforms removeTileAt:ccp(tilex,tiley)];
+            }
+            
+            else if(gid == RID_THOUGHT_FRAGMENT) {
+                thoughtFragCount++;
             }
         }
     }
@@ -149,7 +154,7 @@ int RID_LADDAS[] = { 10, 18 };
 	}
 	
 	if(gid == RID_THOUGHT_FRAGMENT) {
-		mushRoomCount--;
+		thoughtFragCount--;
         
         [Score increment:REWARD_THOUGHT_FRAGMENT];
 		
@@ -159,13 +164,15 @@ int RID_LADDAS[] = { 10, 18 };
 	[rewardsLayer removeTileAt:contact];
 }
 
-- (void) handlePCGoalCollision {   
-    complete = TRUE;
+- (void) handlePCGoalCollision {
     
+    complete = TRUE;
+        
     if([self isMemberOfClass:[Level0 class]])
         [Helper goLevel];
-    
+        
     [self unschedule:@selector(update:)];
+    
 }
 
 - (void) scroll {

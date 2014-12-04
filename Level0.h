@@ -25,7 +25,7 @@
     int count;
     bool caught;
 	bool complete;
-	int mushRoomCount;
+	int thoughtFragCount;
 
 	Goal* goal;
 	Player* player;

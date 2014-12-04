@@ -21,7 +21,7 @@
 
 - (Player*) initAt:(CGPoint) point of:(AbstractLevel*) level_ {
     
-    [super initWithFrames: @"Player.png" width:16 andHeight:16];
+    [super initWithFrames: @"player.png" width:16 andHeight:16];
     
     if(self != nil) {
         vx = vy = 0;

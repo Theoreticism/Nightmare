@@ -40,7 +40,7 @@
     
     if((self = [super init])) {
         bubbles = [[NSArray alloc]initWithObjects:
-                   @"Caught!",@"Gotcha!",@"Take that!",@"Pow!",@"Ha, ha!",nil];
+                   @"No escape...",@"Join us...",@"Darkness looms!",@"Nothing can save you!",@"Death and decay!",nil];
         
         feedback = [CCLabelTTF labelWithString:@"" fontName:@"Xposed" fontSize:24];
         

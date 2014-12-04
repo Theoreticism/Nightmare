@@ -15,7 +15,7 @@
 
 @implementation Horror
 - (id) initAt:(CGPoint) here of:(AbstractLevel*) level_ {
-    [super initWithFrames: @"harpie.png" width:32 andHeight:32];
+    [super initWithFrames: @"horror.png" width:16 andHeight:16];
     
 	state = STATE_ALIVE;
 	

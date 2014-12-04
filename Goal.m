@@ -11,7 +11,7 @@
 @implementation Goal
 - (Goal*) initAt:(CGPoint) point {
     
-    [super initWithFrames: @"goal_2.png" width:32 andHeight:32];
+    [super initWithFrames: @"goal.png" width:16 andHeight:16];
     
     if(self != nil) {
         self.position = point;
