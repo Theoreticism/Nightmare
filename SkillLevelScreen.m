@@ -7,6 +7,7 @@
 //
 
 #import "SkillLevelScreen.h"
+#import "Lives.h"
 
 @implementation SkillLevelScreen
 
@@ -57,15 +58,15 @@
 }
 
 -(void) onBeginner:(CCMenuItemFont *)button {
-    //Do nothing yet
+    [Lives set: 5];
 }
 
 -(void) onIntermediate:(CCMenuItemFont *)button {
-    //Do nothing yet
+    [Lives set: 3];
 }
 
 -(void) onAdvanced:(CCMenuItemFont *)button {
-    //Do nothing yet
+    [Lives set: 1];
 }
 
 @end

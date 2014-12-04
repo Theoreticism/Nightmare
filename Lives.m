@@ -11,7 +11,7 @@
 #import "Helper.h"
 
 
-#define NUM_LIVES 3
+#define NUM_LIVES 5
 #define SCALE 2
 #define BLOCK_SIZE TOPOINT(16)
 #define GAP 2
@@ -27,15 +27,15 @@ static CCLayer* lives = nil;
 
 @implementation Lives
 - (id) initAt:(CGPoint) point {
-    if((self = [super init])) {        
+    if((self = [super init])) {
         lives = self;
         
         // Get the lives tile
         CCTexture2D* texture =
-            [[CCTextureCache sharedTextureCache] addImage:@"tiles_mga.png"];
+        [[CCTextureCache sharedTextureCache] addImage:@"tiles_mga.png"];
         
         CCSpriteFrame *life =
-            [CCSpriteFrame frameWithTexture:texture rect:CGRectMake(LIFE_X, LIFE_Y, LIFE_W, LIFE_H)];
+        [CCSpriteFrame frameWithTexture:texture rect:CGRectMake(LIFE_X, LIFE_Y, LIFE_W, LIFE_H)];
         
         // Add the lives as sprites to the layer
         for(int i=0; i < [Lives remaining]; i++) {
@@ -54,6 +54,10 @@ static CCLayer* lives = nil;
     }
     
     return self;
+}
+
++ (void) set:(int) val {
+    value = val;
 }
 
 + (int) remaining {

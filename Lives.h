@@ -10,7 +10,10 @@
 #import "cocos2d.h"
 
 /** Lives layer and container of lives info */
-@interface Lives : CCLayer 
+@interface Lives : CCLayer
+
+/** Sets the amount of lifes*/
++ (void) set:(int) val;
 
 /** Returns number of remaining lives */
 + (int) remaining;

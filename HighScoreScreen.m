@@ -9,6 +9,8 @@
 #import "HighScoreScreen.h"
 #import "HighScoresScreen.h"
 
+static int arr[] = { 0, 0, 0};
+
 @implementation HighScoreScreen
 
 +(CCScene *) scene {
@@ -23,11 +25,34 @@
     return scene;
 }
 
+/** returns the lowest score*/
++ (int) lowScore {
+    return arr[2];
+}
+
+/** Gets a new list of scores */
++ (void) Update: (int[]) list {
+    arr[0] = list[0];
+    arr[1] = list[2];
+    arr[2] = list[2];
+}
+
 -(id) init {
     if( (self=[super init]) ) {
         //Get the screen dimensions
         int screenWidth = [[CCDirector sharedDirector] winSize].width;
         int screenHeight = [[CCDirector sharedDirector] winSize].height;
+        
+        NSString* title = @"High Scores!";
+        
+        CCLabelTTF *label = [CCLabelTTF labelWithString:title fontName:@"Xposed" fontSize:56];
+        
+        // position the label on the center of the screen
+		label.position =  ccp( screenWidth /2 , screenHeight /1.2f);
+        
+        label.color = ccc3(255,0,0);
+        
+        [self addChild:label];
         
         [CCMenuItemFont setFontName:@"Xposed"];
         
@@ -49,8 +74,8 @@
 
 /** Handles pressing the OK button*/
 -(void) onOK:(CCMenuItemFont *)button {
-    //upload high score
-    [[CCDirector sharedDirector] pushScene:[HighScoresScreen scene]];
+    //return to main menu
+    [[CCDirector sharedDirector] pushScene:[MainScreen scene]];
 }
 
 @end
