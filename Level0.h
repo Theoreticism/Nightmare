@@ -13,10 +13,10 @@
 #define RID_NO_TILE 0
 #define RID_WALL 1
 #define RID_PLAYER 2
-#define RID_GORGON 45
-#define RID_HARPIE 53
-#define RID_GOAL 60
-#define RID_ENEMY_BLOCK 61
+#define RID_GORGON 3
+#define RID_HARPIE 4
+#define RID_GOAL 17
+#define RID_ENEMY_BLOCK 19
 #define RID_MUSHROOM_SMALL 9
 #define RID_MUSHROOM_BIG 56
 #define RID_GROUND 34
@@ -66,7 +66,7 @@
 - (void) handlePCGoalCollision;
 
 /** Returns true if the GID is a mushroom */
-- (bool) isMushroom:(int) gid;
+- (bool) isThoughtFragment:(int) gid;
 
 /** Returns true if the GID is a lil mushroom */
 - (bool) isLilMushroom:(int) gid;

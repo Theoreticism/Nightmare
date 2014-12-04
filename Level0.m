@@ -258,7 +258,7 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
     [super setPosition:CGPointMake(TOPOINT(position.x), TOPOINT(position.y))];
 }
 
-- (bool) isMushroom: (int) gid {
+- (bool) isThoughtFragment: (int) gid {
 	return [self isLilMushroom:gid] || [self isBigMushroom:gid];
 }
 
