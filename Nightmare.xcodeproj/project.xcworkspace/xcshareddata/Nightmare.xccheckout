@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3BCAE611-C62F-4455-99BE-11AC1A912511</string>
+	<string>E47AC633-B87F-47DB-AB13-C5058DF87B66</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Nightmare</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>25C08DDB-A19F-4468-8FBC-4BFE5C8026A2</key>
-		<string>https://github.com/chriskwlee/Nightmare.git</string>
+		<key>CB3B4494-DE53-4D79-83EA-C86A6831CA32</key>
+		<string>https://github.com/chriskwlee/Nightmare</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Nightmare.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>25C08DDB-A19F-4468-8FBC-4BFE5C8026A2</key>
+		<key>CB3B4494-DE53-4D79-83EA-C86A6831CA32</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/chriskwlee/Nightmare.git</string>
+	<string>https://github.com/chriskwlee/Nightmare</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>25C08DDB-A19F-4468-8FBC-4BFE5C8026A2</string>
+	<string>CB3B4494-DE53-4D79-83EA-C86A6831CA32</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>25C08DDB-A19F-4468-8FBC-4BFE5C8026A2</string>
+			<string>CB3B4494-DE53-4D79-83EA-C86A6831CA32</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Nightmare</string>
 		</dict>

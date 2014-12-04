@@ -72,7 +72,7 @@
     [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
     [Options enableMusic:false];
     //Toggle sounds off
-    [Options enableMusic: false];
+    [Options enableSounds: false];
 }
 
 @end

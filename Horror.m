@@ -6,14 +6,14 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "Harpie.h"
+#import "Horror.h"
 
 #define SPEED_FLYA 4
 
 #define FACING_LEFT 1
 #define FACING_RIGHT 0
 
-@implementation Harpie
+@implementation Horror
 - (id) initAt:(CGPoint) here of:(AbstractLevel*) level_ {
     [super initWithFrames: @"harpie.png" width:32 andHeight:32];
     

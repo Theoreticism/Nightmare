@@ -9,7 +9,7 @@
 #import "Enemy.h"
 
 /** Harpie enemy */
-@interface Harpie : Enemy
+@interface Horror : Enemy
 
 /** Comstructor */
 - (id) initAt:(CGPoint) here of:(AbstractLevel*) level_;

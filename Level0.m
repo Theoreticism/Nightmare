@@ -16,13 +16,9 @@
 
 #define TILED_MAP @"level0.tmx"
 
-#define REWARD_MUSHROOM_LIL 5
-#define REWARD_MUSHROOM_BIG 10
+#define REWARD_THOUGHT_FRAGMENT 10
 
-int RID_MUSHROOMS_SMALL[] = { 9, 10, 11, 12, 13, 14, 15 };
-int RID_MUSHROOMS_BIG[] = { 56, 62, 63 };
-int RID_PLATFORMS[] = { 1, 19, 20, 21, 25, 26, 27, 34 };
-int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
+int RID_LADDAS[] = { 10, 18 };
 
 @implementation Level0
 
@@ -152,17 +148,10 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
 		gid = [rewardsLayer tileGIDAt:contact];
 	}
 	
-	if([self isLilMushroom:gid]) {
+	if(gid == RID_THOUGHT_FRAGMENT) {
 		mushRoomCount--;
         
-        [Score increment:REWARD_MUSHROOM_LIL];
-		
-        [SoundEffects lil];
-	}
-	else if([self isBigMushroom:gid]) {
-		mushRoomCount--;
-
-        [Score increment:REWARD_MUSHROOM_BIG];
+        [Score increment:REWARD_THOUGHT_FRAGMENT];
 		
         [SoundEffects big];
 	}
@@ -258,30 +247,6 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
     [super setPosition:CGPointMake(TOPOINT(position.x), TOPOINT(position.y))];
 }
 
-- (bool) isThoughtFragment: (int) gid {
-	return [self isLilMushroom:gid] || [self isBigMushroom:gid];
-}
-
-- (bool) isLilMushroom:(int) gid {
-	int sz = sizeof(RID_MUSHROOMS_SMALL)/sizeof(int);
-	
-	for(int i=0; i < sz; i++)
-		if(gid == RID_MUSHROOMS_SMALL[i])
-			return true;
-	
-	return false;
-}
-
-- (bool) isBigMushroom:(int) gid {
-	int sz = sizeof(RID_MUSHROOMS_BIG)/sizeof(int);
-	
-	for(int i=0; i < sz; i++)
-		if(gid == RID_MUSHROOMS_BIG[i])
-			return true;
-	
-	return false;
-}
-
 - (bool) isLadda:(int) gid {
 	int sz = sizeof(RID_LADDAS)/sizeof(int);
 	
@@ -293,14 +258,12 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
 	return false;
 }
 
-
 - (bool) isPlatform:(int) gid {
-	int sz = sizeof(RID_PLATFORMS)/sizeof(int);
 	
-	for(int i=0; i < sz; i++)
-		if(gid == RID_PLATFORMS[i])
-			return true;
-	
+    if(gid == RID_WALL || gid == RID_GROUND) {
+        return true;
+    }
+    
 	return false;
 }
 @end

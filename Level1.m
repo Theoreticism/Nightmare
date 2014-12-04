@@ -9,7 +9,7 @@
 #import "Level1.h"
 #import "Helper.h"
 #import "Shadow.h"
-#import "Harpie.h"
+#import "Horror.h"
 #import "SoundEffects.h"
 #import "Lives.h"
 
@@ -78,20 +78,20 @@
 //            CGPoint here = [Helper tileToWorldX:tilex andY:tiley];
             CGPoint here = [Helper tile:ccp(tilex,tiley) toWorld:world];
             
-            if(gid == RID_GORGON) {
-                Shadow* gorgon = (Shadow*) [[Shadow alloc] initAt:here of:self];
+            if(gid == RID_SHADOW) {
+                Shadow* shadow = (Shadow*) [[Shadow alloc] initAt:here of:self];
                 
-                [self addChild:gorgon z:90];
+                [self addChild:shadow z:90];
                 
-                [enemies addObject:gorgon]; 
+                [enemies addObject:shadow];
             }
             
-            else if(gid == RID_HARPIE) {
-                Harpie* harpie = (Harpie*) [[Harpie alloc] initAt:here of:self];
+            else if(gid == RID_HORROR) {
+                Horror* horror = (Horror*) [[Horror alloc] initAt:here of:self];
                 
-                [self addChild:harpie z:90];
+                [self addChild:horror z:90];
                 
-                [enemies addObject:harpie];
+                [enemies addObject:horror];
             }
         }
     }
@@ -188,7 +188,7 @@
         }
     }
     
-    // Check for a collision with Grace
+    // Check for a collision with Player
     if([player collidesWithEntity:enemy]) {
 		// If grace jumps on an enemy, give 'em some points and a cheer
 		if([enemy isKindOfClass:[Shadow class]] && [player landsOn:enemy]) {

@@ -13,14 +13,12 @@
 #define RID_NO_TILE 0
 #define RID_WALL 1
 #define RID_PLAYER 2
-#define RID_GORGON 3
-#define RID_HARPIE 4
+#define RID_SHADOW 3
+#define RID_HORROR 4
 #define RID_GOAL 17
 #define RID_ENEMY_BLOCK 19
-#define RID_MUSHROOM_SMALL 9
-#define RID_MUSHROOM_BIG 56
-#define RID_GROUND 34
-#define RID_BLOCK_PLATFORM 57
+#define RID_THOUGHT_FRAGMENT 5
+#define RID_GROUND 9
 
 /** Level 0 handles the goal, rewards and scrolling */
 @interface Level0 : AbstractLevel {
@@ -64,15 +62,6 @@
 
 /** Handles PC-goal collisions */
 - (void) handlePCGoalCollision;
-
-/** Returns true if the GID is a mushroom */
-- (bool) isThoughtFragment:(int) gid;
-
-/** Returns true if the GID is a lil mushroom */
-- (bool) isLilMushroom:(int) gid;
-
-/** Returns true if the GID is a big mushroom */
-- (bool) isBigMushroom:(int) gid;
 
 /** Returns true if the GID is a ladda type */
 - (bool) isLadda:(int) gid;

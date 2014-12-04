@@ -186,7 +186,7 @@
 		F8CD085C1A1455E800247D81 /* Goal.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD08531A1455E800247D81 /* Goal.m */; };
 		F8CD085D1A1455E800247D81 /* Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD08551A1455E800247D81 /* Shadow.m */; };
 		F8CD085E1A1455E800247D81 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD08571A1455E800247D81 /* Player.m */; };
-		F8CD085F1A1455E800247D81 /* Harpie.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD08591A1455E800247D81 /* Harpie.m */; };
+		F8CD085F1A1455E800247D81 /* Horror.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD08591A1455E800247D81 /* Horror.m */; };
 		F8CD086E1A1458DD00247D81 /* AbstractLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD08611A1458DD00247D81 /* AbstractLevel.m */; };
 		F8CD086F1A1458DD00247D81 /* Complete.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD08631A1458DD00247D81 /* Complete.m */; };
 		F8CD08701A1458DD00247D81 /* Credits.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD08651A1458DD00247D81 /* Credits.m */; };
@@ -558,8 +558,8 @@
 		F8CD08551A1455E800247D81 /* Shadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shadow.m; sourceTree = "<group>"; };
 		F8CD08561A1455E800247D81 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		F8CD08571A1455E800247D81 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		F8CD08581A1455E800247D81 /* Harpie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Harpie.h; sourceTree = "<group>"; };
-		F8CD08591A1455E800247D81 /* Harpie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Harpie.m; sourceTree = "<group>"; };
+		F8CD08581A1455E800247D81 /* Horror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Horror.h; sourceTree = "<group>"; };
+		F8CD08591A1455E800247D81 /* Horror.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Horror.m; sourceTree = "<group>"; };
 		F8CD08601A1458DD00247D81 /* AbstractLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractLevel.h; sourceTree = "<group>"; };
 		F8CD08611A1458DD00247D81 /* AbstractLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractLevel.m; sourceTree = "<group>"; };
 		F8CD08621A1458DD00247D81 /* Complete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Complete.h; sourceTree = "<group>"; };
@@ -633,8 +633,8 @@
 				F8CD08551A1455E800247D81 /* Shadow.m */,
 				F8CD08561A1455E800247D81 /* Player.h */,
 				F8CD08571A1455E800247D81 /* Player.m */,
-				F8CD08581A1455E800247D81 /* Harpie.h */,
-				F8CD08591A1455E800247D81 /* Harpie.m */,
+				F8CD08581A1455E800247D81 /* Horror.h */,
+				F8CD08591A1455E800247D81 /* Horror.m */,
 			);
 			name = Entities;
 			path = ..;
@@ -1443,7 +1443,7 @@
 				F844069719E614A700A704B8 /* CCRenderTexture.m in Sources */,
 				F844061F19E614A600A704B8 /* CCActionInterval.m in Sources */,
 				F844068D19E614A700A704B8 /* CCPhysicsDebugNode.m in Sources */,
-				F8CD085F1A1455E800247D81 /* Harpie.m in Sources */,
+				F8CD085F1A1455E800247D81 /* Horror.m in Sources */,
 				F844061319E614A600A704B8 /* CCActionEase.m in Sources */,
 				F844065019E614A600A704B8 /* CCFontDefinition.m in Sources */,
 				F844069019E614A700A704B8 /* CCPhysicsSprite.mm in Sources */,
