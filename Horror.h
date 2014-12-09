@@ -8,10 +8,12 @@
 
 #import "Enemy.h"
 
-/** Harpie enemy */
-@interface Horror : Enemy
+/** Horror enemy */
+@interface Horror : Enemy {
+    bool firstTime;
+}
 
-/** Comstructor */
+/** Constructor */
 - (id) initAt:(CGPoint) here of:(AbstractLevel*) level_;
 
 /** Handles a collision event */

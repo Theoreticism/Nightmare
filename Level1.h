@@ -16,6 +16,7 @@
     NSArray* bubbles;
     CCLabelTTF* feedback;
     CCTMXLayer* stalksLayer;
+    bool hasWeapon;
 }
 
 /** Gets a scene for this layer */

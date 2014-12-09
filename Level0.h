@@ -19,6 +19,8 @@
 #define RID_ENEMY_BLOCK 19
 #define RID_THOUGHT_FRAGMENT 5
 #define RID_GROUND 9
+#define RID_OBSTACLE 11
+#define RID_WEAPON 7
 
 /** Level 0 handles the goal, rewards and scrolling */
 @interface Level0 : AbstractLevel {

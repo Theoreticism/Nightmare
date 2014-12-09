@@ -67,6 +67,8 @@
     
     enemiesLayer = [world layerNamed:@"enemies"];
     
+    hasWeapon = false;
+    
     [enemiesLayer setVisible:false];
     
     enemies = [[NSMutableArray alloc] init];
@@ -191,7 +193,9 @@
     // Check for a collision with Player
     if([player collidesWithEntity:enemy]) {
 		// If grace jumps on an enemy, give 'em some points and a cheer
-		if([enemy isKindOfClass:[Shadow class]] && [player landsOn:enemy]) {
+		if(([enemy isKindOfClass:[Shadow class]] && [player landsOn:enemy]) ||
+           ([enemy isKindOfClass:[Horror class]] && hasWeapon == TRUE) ||
+           ([enemy isKindOfClass:[Shadow class]] && hasWeapon == TRUE)) {
 			enemy.state = STATE_DYING;
 			
 			[Score increment:REWARD_CRUSH_MONSTA];

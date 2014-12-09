@@ -27,6 +27,8 @@
 		F8212CA41A02BC4200C13578 /* SneakyJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = F8212C9F1A02BC4200C13578 /* SneakyJoystick.m */; };
 		F8212CA51A02BC4200C13578 /* SneakyJoystickSkinnedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F8212CA11A02BC4200C13578 /* SneakyJoystickSkinnedBase.m */; };
 		F8212CA71A02BC5500C13578 /* 4225775_The_River_War_Original_Mix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8212CA61A02BC5500C13578 /* 4225775_The_River_War_Original_Mix.mp3 */; };
+		F833798B1A3692C400B99134 /* Level2.m in Sources */ = {isa = PBXBuildFile; fileRef = F833798A1A3692C400B99134 /* Level2.m */; };
+		F833798E1A36983200B99134 /* Level3.m in Sources */ = {isa = PBXBuildFile; fileRef = F833798D1A36983200B99134 /* Level3.m */; };
 		F84405DA19E614A500A704B8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84405D919E614A500A704B8 /* QuartzCore.framework */; };
 		F84405DC19E614A500A704B8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84405DB19E614A500A704B8 /* OpenGLES.framework */; };
 		F84405DE19E614A500A704B8 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84405DD19E614A500A704B8 /* OpenAL.framework */; };
@@ -230,6 +232,10 @@
 		F8212CA01A02BC4200C13578 /* SneakyJoystickSkinnedBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyJoystickSkinnedBase.h; sourceTree = "<group>"; };
 		F8212CA11A02BC4200C13578 /* SneakyJoystickSkinnedBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SneakyJoystickSkinnedBase.m; sourceTree = "<group>"; };
 		F8212CA61A02BC5500C13578 /* 4225775_The_River_War_Original_Mix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4225775_The_River_War_Original_Mix.mp3; sourceTree = "<group>"; };
+		F83379891A3692C400B99134 /* Level2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level2.h; sourceTree = "<group>"; };
+		F833798A1A3692C400B99134 /* Level2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level2.m; sourceTree = "<group>"; };
+		F833798C1A36983200B99134 /* Level3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level3.h; sourceTree = "<group>"; };
+		F833798D1A36983200B99134 /* Level3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level3.m; sourceTree = "<group>"; };
 		F84405D619E614A500A704B8 /* Nightmare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nightmare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84405D919E614A500A704B8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F84405DB19E614A500A704B8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1167,6 +1173,10 @@
 				F8CD086B1A1458DD00247D81 /* Level0.m */,
 				F8CD086C1A1458DD00247D81 /* Level1.h */,
 				F8CD086D1A1458DD00247D81 /* Level1.m */,
+				F83379891A3692C400B99134 /* Level2.h */,
+				F833798A1A3692C400B99134 /* Level2.m */,
+				F833798C1A36983200B99134 /* Level3.h */,
+				F833798D1A36983200B99134 /* Level3.m */,
 				F844078D19E6150300A704B8 /* MainScreen.h */,
 				F844078E19E6150300A704B8 /* MainScreen.m */,
 				F844079019E6153B00A704B8 /* OptionsScreen.h */,
@@ -1317,6 +1327,7 @@
 				F8CD08731A1458DD00247D81 /* Level0.m in Sources */,
 				F89270AD1A15465200131077 /* SplashScreen.m in Sources */,
 				F8CD085C1A1455E800247D81 /* Goal.m in Sources */,
+				F833798B1A3692C400B99134 /* Level2.m in Sources */,
 				F844064419E614A600A704B8 /* ccDeprecated.m in Sources */,
 				F84406FF19E614A800A704B8 /* CCDirectorMac.m in Sources */,
 				F844065919E614A600A704B8 /* ccGLStateCache.m in Sources */,
@@ -1390,6 +1401,7 @@
 				F844063719E614A600A704B8 /* CCAtlasNode.m in Sources */,
 				F8CD085A1A1455E800247D81 /* Enemy.m in Sources */,
 				F844077D19E614A800A704B8 /* main.m in Sources */,
+				F833798E1A36983200B99134 /* Level3.m in Sources */,
 				F84406FB19E614A800A704B8 /* CCTouchHandler.m in Sources */,
 				F844067519E614A700A704B8 /* CCMotionStreak.m in Sources */,
 				F84406F419E614A800A704B8 /* CCGLView.m in Sources */,

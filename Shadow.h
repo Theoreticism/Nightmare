@@ -8,7 +8,7 @@
 
 #import "Enemy.h"
 
-/** Gorgon enemy */
+/** Shadow enemy */
 @interface Shadow : Enemy {
 	bool firstTime;
 }
