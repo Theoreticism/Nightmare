@@ -158,6 +158,8 @@
 	// Reset grace to its initial position and not moving
     [player reset];
     
+    [self setPosition:ccp(0, 0)];
+    
     [feedback setVisible:FALSE];
     
 	caught = FALSE;

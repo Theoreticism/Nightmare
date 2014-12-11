@@ -19,4 +19,8 @@
 
 /** Gets the number of levels */
 + (int) numberOfLevels;
+
+/** Resets level after game over */
++ (void) reset;
+
 @end

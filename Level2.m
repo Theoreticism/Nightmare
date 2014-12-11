@@ -68,6 +68,9 @@
         [self handlePCObstacleCollision];
     }
     
+    if (caught && hitObstacle)
+        [super handlePCCaught];
+    
     [self scroll];
 }
 
@@ -90,6 +93,7 @@
     
     if (gid == RID_OBSTACLE) {
         
+        hitObstacle = TRUE;
         caught = TRUE;
         
     }

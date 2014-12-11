@@ -17,6 +17,12 @@
 /** Gets a scene to contain this layer */
 +(CCScene *) scene;
 
+/** Gets the array of scores */
++ (int) lowScore;
+
+/** Gets a new list of scores */
++ (void) Update: (int) list;
+
 /** Constructor for the quit screen*/
 -(id) init;
 

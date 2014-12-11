@@ -183,7 +183,6 @@
 		F8CD086E1A1458DD00247D81 /* AbstractLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD08611A1458DD00247D81 /* AbstractLevel.m */; };
 		F8CD086F1A1458DD00247D81 /* Complete.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD08631A1458DD00247D81 /* Complete.m */; };
 		F8CD08701A1458DD00247D81 /* Credits.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD08651A1458DD00247D81 /* Credits.m */; };
-		F8CD08711A1458DD00247D81 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD08671A1458DD00247D81 /* GameOver.m */; };
 		F8CD08721A1458DD00247D81 /* InterLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD08691A1458DD00247D81 /* InterLevel.m */; };
 		F8CD08731A1458DD00247D81 /* Level0.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD086B1A1458DD00247D81 /* Level0.m */; };
 		F8CD08741A1458DD00247D81 /* Level1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CD086D1A1458DD00247D81 /* Level1.m */; };
@@ -557,8 +556,6 @@
 		F8CD08631A1458DD00247D81 /* Complete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Complete.m; sourceTree = "<group>"; };
 		F8CD08641A1458DD00247D81 /* Credits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Credits.h; sourceTree = "<group>"; };
 		F8CD08651A1458DD00247D81 /* Credits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Credits.m; sourceTree = "<group>"; };
-		F8CD08661A1458DD00247D81 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
-		F8CD08671A1458DD00247D81 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
 		F8CD08681A1458DD00247D81 /* InterLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterLevel.h; sourceTree = "<group>"; };
 		F8CD08691A1458DD00247D81 /* InterLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterLevel.m; sourceTree = "<group>"; };
 		F8CD086A1A1458DD00247D81 /* Level0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level0.h; sourceTree = "<group>"; };
@@ -1168,8 +1165,6 @@
 				F8CD08631A1458DD00247D81 /* Complete.m */,
 				F8CD08641A1458DD00247D81 /* Credits.h */,
 				F8CD08651A1458DD00247D81 /* Credits.m */,
-				F8CD08661A1458DD00247D81 /* GameOver.h */,
-				F8CD08671A1458DD00247D81 /* GameOver.m */,
 				F8CD08681A1458DD00247D81 /* InterLevel.h */,
 				F8CD08691A1458DD00247D81 /* InterLevel.m */,
 				F8CD086A1A1458DD00247D81 /* Level0.h */,
@@ -1462,7 +1457,6 @@
 				F844065619E614A600A704B8 /* CCGLProgram.m in Sources */,
 				F844079B19E6156100A704B8 /* HighScoresScreen.m in Sources */,
 				F844078F19E6150300A704B8 /* MainScreen.m in Sources */,
-				F8CD08711A1458DD00247D81 /* GameOver.m in Sources */,
 				F844074619E614A800A704B8 /* SimpleAudioEngine.m in Sources */,
 				F8CD085D1A1455E800247D81 /* Shadow.m in Sources */,
 				F84406F819E614A800A704B8 /* CCTouchDispatcher.m in Sources */,

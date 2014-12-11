@@ -9,8 +9,12 @@
 #import "CCLayer.h"
 #import "cocos2d.h"
 
+static int def;
+
 /** Skill level screen layer which runs the skill level menu */
-@interface SkillLevelScreen : CCLayer
+@interface SkillLevelScreen : CCLayer {
+
+}
 
 /** Gets a scene to contain this layer */
 +(CCScene *) scene;
@@ -20,6 +24,9 @@
 
 /** Handles pressing the Back button*/
 -(void) onBack: (CCMenuItemFont*) button;
+
+/** Returns default lives value */
++(int) getDefault;
 
 /** Handles pressing the Skill difficulty buttons*/
 -(void) onBeginner: (CCMenuItemFont*) button;

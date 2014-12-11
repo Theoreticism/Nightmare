@@ -10,7 +10,7 @@
 #import "LevelSequence.h"
 #import "InterLevel.h"
 #import "Complete.h"
-#import "GameOver.h"
+#import "GameOverScreen.h"
 
 #define HT_FRACTION 0.95
 

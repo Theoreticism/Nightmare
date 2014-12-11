@@ -14,6 +14,7 @@
     CCTMXLayer* insanityLayer;
     NSArray* popup;
     CCLabelTTF* display;
+    bool hitObstacle;
 }
 
 /** Gets a scene for this layer */

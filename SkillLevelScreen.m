@@ -58,15 +58,22 @@
 }
 
 -(void) onBeginner:(CCMenuItemFont *)button {
+    def = 5;
     [Lives set: 5];
 }
 
 -(void) onIntermediate:(CCMenuItemFont *)button {
+    def = 3;
     [Lives set: 3];
 }
 
 -(void) onAdvanced:(CCMenuItemFont *)button {
+    def = 1;
     [Lives set: 1];
+}
+
++(int) getDefault {
+    return def;
 }
 
 @end

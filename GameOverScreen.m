@@ -7,6 +7,11 @@
 //
 
 #import "GameOverScreen.h"
+#import "HighScoreScreen.h"
+#import "Score.h"
+#import "Lives.h"
+#import "SkillLevelScreen.h"
+#import "LevelSequence.h"
 
 @implementation GameOverScreen
 
@@ -55,10 +60,21 @@
 /** Handles pressing the OK button*/
 -(void) onContinue:(CCMenuItemFont *)button {
     //check current High Score
-    //if greater
-    //[[CCDirector sharedDirector] pushScene:[HighScoreScreen scene]];
-    //else
-    [[CCDirector sharedDirector] pushScene:[MainScreen scene]];
+    int currentScore = [Score score];
+    
+    //reset lives
+    [Lives set:[SkillLevelScreen getDefault]];
+    
+    //reset level
+    [LevelSequence reset];
+    
+    //if greater than lowest score
+    if (currentScore > [HighScoreScreen lowScore]) {
+        [HighScoreScreen Update: currentScore];
+        [[CCDirector sharedDirector] pushScene:[HighScoreScreen scene]];
+    } else {
+        [[CCDirector sharedDirector] popScene];
+    }
 }
 
 @end
