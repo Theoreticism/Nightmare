@@ -200,11 +200,12 @@
 		F8D100C31A311A8A00629794 /* goal.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D100C21A311A8A00629794 /* goal.png */; };
 		F8D100D41A31235B00629794 /* level0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8D100D01A31235B00629794 /* level0.tmx */; };
 		F8D100D51A31235B00629794 /* level1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8D100D11A31235B00629794 /* level1.tmx */; };
-		F8D100D61A31235B00629794 /* level2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8D100D21A31235B00629794 /* level2.tmx */; };
-		F8D100D71A31235B00629794 /* level3.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8D100D31A31235B00629794 /* level3.tmx */; };
 		F8D100D91A31256400629794 /* horror.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D100D81A31256400629794 /* horror.png */; };
 		F8E48CDD1A17FCCF00CAFD1C /* Gray_Box-728x1113.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E48CDB1A17FCCF00CAFD1C /* Gray_Box-728x1113.png */; };
 		F8E48CF91A1816C400CAFD1C /* shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E48CF81A1816C400CAFD1C /* shadow.png */; };
+		F8EE3EA71A390BAB0035F076 /* tiles_mga.png in Resources */ = {isa = PBXBuildFile; fileRef = F8EE3EA61A390BAB0035F076 /* tiles_mga.png */; };
+		F8EE3EAE1A3912E80035F076 /* level2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8EE3EAC1A3912E80035F076 /* level2.tmx */; };
+		F8EE3EB11A3933A90035F076 /* level3.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8EE3EB01A3933A90035F076 /* level3.tmx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -584,11 +585,12 @@
 		F8D100C21A311A8A00629794 /* goal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goal.png; sourceTree = "<group>"; };
 		F8D100D01A31235B00629794 /* level0.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level0.tmx; sourceTree = "<group>"; };
 		F8D100D11A31235B00629794 /* level1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level1.tmx; sourceTree = "<group>"; };
-		F8D100D21A31235B00629794 /* level2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level2.tmx; sourceTree = "<group>"; };
-		F8D100D31A31235B00629794 /* level3.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level3.tmx; sourceTree = "<group>"; };
 		F8D100D81A31256400629794 /* horror.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horror.png; sourceTree = "<group>"; };
 		F8E48CDB1A17FCCF00CAFD1C /* Gray_Box-728x1113.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gray_Box-728x1113.png"; sourceTree = "<group>"; };
 		F8E48CF81A1816C400CAFD1C /* shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow.png; sourceTree = "<group>"; };
+		F8EE3EA61A390BAB0035F076 /* tiles_mga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiles_mga.png; sourceTree = "<group>"; };
+		F8EE3EAC1A3912E80035F076 /* level2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level2.tmx; sourceTree = "<group>"; };
+		F8EE3EB01A3933A90035F076 /* level3.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level3.tmx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -657,6 +659,7 @@
 		F82124C71A02BAEA00C13578 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F8EE3EA61A390BAB0035F076 /* tiles_mga.png */,
 				F8D100C21A311A8A00629794 /* goal.png */,
 				F8D100C01A31195300629794 /* tiles_nightmare.png */,
 				F8D100B81A31188A00629794 /* player.png */,
@@ -1208,8 +1211,8 @@
 				F8D100BA1A31190A00629794 /* backg.tmx */,
 				F8D100D01A31235B00629794 /* level0.tmx */,
 				F8D100D11A31235B00629794 /* level1.tmx */,
-				F8D100D21A31235B00629794 /* level2.tmx */,
-				F8D100D31A31235B00629794 /* level3.tmx */,
+				F8EE3EAC1A3912E80035F076 /* level2.tmx */,
+				F8EE3EB01A3933A90035F076 /* level3.tmx */,
 			);
 			name = Maps;
 			sourceTree = "<group>";
@@ -1275,23 +1278,23 @@
 				F844060019E614A600A704B8 /* Icon.png in Resources */,
 				F8E48CF91A1816C400CAFD1C /* shadow.png in Resources */,
 				F80F10ED1A02C48B0022B771 /* you-can-do-it.mp3 in Resources */,
-				F8D100D61A31235B00629794 /* level2.tmx in Resources */,
 				F8D100BD1A31190A00629794 /* backg.tmx in Resources */,
 				F8D100D91A31256400629794 /* horror.png in Resources */,
 				F80F10F01A02C48B0022B771 /* yummy2.mp3 in Resources */,
 				F8D100C31A311A8A00629794 /* goal.png in Resources */,
 				F8D100B91A31188A00629794 /* player.png in Resources */,
+				F8EE3EA71A390BAB0035F076 /* tiles_mga.png in Resources */,
 				F844075E19E614A800A704B8 /* ChangeLog in Resources */,
 				F80F10E81A02C48B0022B771 /* bonus.mp3 in Resources */,
 				F84405F219E614A600A704B8 /* Default@2x.png in Resources */,
 				F84405FC19E614A600A704B8 /* Icon-Small.png in Resources */,
-				F8D100D71A31235B00629794 /* level3.tmx in Resources */,
 				F84405F819E614A600A704B8 /* Icon-72.png in Resources */,
 				F84405F019E614A600A704B8 /* Default.png in Resources */,
 				F84405FA19E614A600A704B8 /* Icon-Small-50.png in Resources */,
 				F8E48CDD1A17FCCF00CAFD1C /* Gray_Box-728x1113.png in Resources */,
 				F80F10E71A02C48B0022B771 /* blip2.mp3 in Resources */,
 				F80F10D71A02C4460022B771 /* joystickDown.png in Resources */,
+				F8EE3EB11A3933A90035F076 /* level3.tmx in Resources */,
 				F80F10EF1A02C48B0022B771 /* you-need-to-grow-up.mp3 in Resources */,
 				F844060519E614A600A704B8 /* iTunesArtwork in Resources */,
 				F8212CA71A02BC5500C13578 /* 4225775_The_River_War_Original_Mix.mp3 in Resources */,
@@ -1301,6 +1304,7 @@
 				F80F10EB1A02C48B0022B771 /* shazam2.mp3 in Resources */,
 				F84405F419E614A600A704B8 /* Default-568h@2x.png in Resources */,
 				F8148BCC1A153A5900C4E9CC /* Xposed.ttf in Resources */,
+				F8EE3EAE1A3912E80035F076 /* level2.tmx in Resources */,
 				F844060219E614A600A704B8 /* Icon@2x.png in Resources */,
 				F80F10D21A02C4460022B771 /* dpadDown3.png in Resources */,
 				F80F10EA1A02C48B0022B771 /* evil-laf.mp3 in Resources */,

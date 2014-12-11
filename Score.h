@@ -19,6 +19,9 @@
 /** Increments the score */
 + (void) increment:(int)amount;
 
+/** Decrements the score */
++ (void) decrement:(int)amount;
+
 /** Constructor */
 - (id) initAt:(CGPoint) point;
 

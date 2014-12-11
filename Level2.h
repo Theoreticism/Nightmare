@@ -12,6 +12,8 @@
 @interface Level2 : Level1 {
     CCTMXLayer* obstaclesLayer;
     CCTMXLayer* insanityLayer;
+    NSArray* popup;
+    CCLabelTTF* display;
 }
 
 /** Gets a scene for this layer */
@@ -28,5 +30,8 @@
 
 /** Handles PC-obstacle collisions */
 - (void) handlePCObstacleCollision;
+
+/** Handles PC-insanity fragment collisions */
+- (void) handlePCInsanityCollision;
 
 @end

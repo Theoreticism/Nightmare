@@ -19,6 +19,10 @@ static int value;
 	value += amount;
 }
 
++ (void) decrement: (int) amount {
+    value -= amount;
+}
+
 - (id) initAt:(CGPoint) point {
     if((self = [super init])) {
         label = [CCLabelTTF labelWithString:@"" fontName:@"Marker Felt" fontSize:30];
@@ -34,7 +38,7 @@ static int value;
 }
 
 - (void) update {
-    NSString* text = @"0";
+    NSString* text = @"";
     
     text = [text stringByAppendingString:[NSString stringWithFormat:@"%d",value]];
     

@@ -10,8 +10,11 @@
 #import "Helper.h"
 #import "Lives.h"
 #import "SoundEffects.h"
+#import "Score.h"
 
 #define TILED_MAP @"level2.tmx"
+
+#define INSANITY_FRAGMENT 10
 
 @implementation Level2
 
@@ -33,6 +36,10 @@
     if ([self isMemberOfClass:[Level2 class]])
         world = [CCTMXTiledMap tiledMapWithTMXFile:TILED_MAP];
     
+    if (self = [super init]) {
+        
+    }
+    
     return self;
 }
 
@@ -45,7 +52,23 @@
 }
 
 - (void) update:(ccTime)dt {
+    if (caught || complete)
+        return;
     
+    [super update:dt];
+    
+    if (complete)
+        [Helper goLevel];
+    
+    if ([player collidesWith:insanityLayer]) {
+        [self handlePCInsanityCollision];
+    }
+    
+    if ([player collidesWith:obstaclesLayer]) {
+        [self handlePCObstacleCollision];
+    }
+    
+    [self scroll];
 }
 
 - (void) handlePCObstacleCollision {
@@ -66,12 +89,39 @@
     }
     
     if (gid == RID_OBSTACLE) {
-        [Lives decrement];
+        
+        caught = TRUE;
+        
+    }
+}
+
+- (void) handlePCInsanityCollision {
+    
+    int x = player.x;
+    int y = player.y;
+    
+    CGPoint contact = [Helper world:world toTile:ccp(x, y)];
+    
+    int gid = [insanityLayer tileGIDAt:contact];
+    
+    if (gid == 0) {
+        x += world.tileSize.width;
+        
+        contact = [Helper world:world toTile:ccp(x, y)];
+        
+        gid = [insanityLayer tileGIDAt:contact];
+    }
+    
+    if (gid == RID_INSANITY_FRAGMENT) {
+        
+        [Score decrement:INSANITY_FRAGMENT];
         
         [SoundEffects boo];
         
-        [NSTimer scheduledTimerWithTimeInterval:2.5 target:self selector:@selector(caughtReset) userInfo:nil repeats:NO];
     }
+    
+    [insanityLayer removeTileAt:contact];
+    
 }
 
 @end

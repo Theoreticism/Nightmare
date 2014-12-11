@@ -25,7 +25,7 @@
  </layer>
  <layer name="stalks" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1jEOwkAMRNHUlNz/sBR0KFFWGoTt5b0TjLw/Uo4DAOA3HtUDhntWDxiusr8d2q/sb4f29ZfRX0Z/Gf1l9JfRX0Z/Gf0BALxN+be72lm9f8q/3dXO6v3V77dKf5mu/U1X3d+nbnvudOsv2VNx+27vneypaEF/e5nWXzf6+77Vu+jv3Opd9HdOfxn9ZfSX0V9Gfxl3yfguM/rLdOuv25473frrtmeaaf11o7+M/jL6y+gvo7+M/jL6y+gvoz/+1QsvowRh
+   eJzt1jEKgDAQBVFrS+9/WAs7URIYcf+GeSf4bEZw2yRJkv6xVw9o7qge0Fxlfyu0X9nfCu3bH2N/jP0x9sfYH2N/jP0x9idJknTp8m/3trN6f5d/u7ed1fur32+W/TGp/XWR2t9d2p6RtP7Inorbp7032VPRgv2tpVt/aezve7N3sb9ns3exv2f2x9gfY3+M/TH2x9gf410Yv0smrb+0PSNp/aXtGUl777Q93XTrL439MfbH2B9jf4z9MfbH2B9jf4z99XUCIlgEiQ==
   </data>
  </layer>
  <layer name="obstacles" width="80" height="60">

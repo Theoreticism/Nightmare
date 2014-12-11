@@ -32,6 +32,10 @@
     if ([self isMemberOfClass:[Level3 class]])
         world = [CCTMXTiledMap tiledMapWithTMXFile:TILED_MAP];
 
+    if (self = [super init]) {
+        
+    }
+    
     return self;
 }
 
@@ -49,12 +53,6 @@
     
     if (complete)
         [Helper goLevel];
-    
-    for (Enemy* enemy in enemies)
-        [enemy update];
-    
-    if (caught)
-        [self handlePCCaught];
     
     if ([player collidesWith: weaponsLayer])
         [self handlePCWeaponCollision];
@@ -78,6 +76,11 @@
     }
     
     if (gid == RID_WEAPON) {
+        
+        gotWeapon.position = ccp(TOPOINT(player.x), TOPOINT(player.y + player.height));
+        
+        gotWeapon = [CCLabelTTF labelWithString:@"Weapon acquired!" fontName:@"Xposed" fontSize:24];
+        
         [SoundEffects big];
         
         hasWeapon = TRUE;

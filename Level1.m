@@ -95,6 +95,7 @@
                 
                 [enemies addObject:horror];
             }
+            
         }
     }
 }
@@ -115,6 +116,8 @@
     
     if(caught)
         [self handlePCCaught];
+    
+    [self scroll];
 }
 
 -(void) handlePCCaught {

@@ -10,6 +10,7 @@
 
 @interface Level3 : Level2 {
     CCTMXLayer* weaponsLayer;
+    CCLabelTTF* gotWeapon;
 }
 
 /** Gets a scene for this layer */
